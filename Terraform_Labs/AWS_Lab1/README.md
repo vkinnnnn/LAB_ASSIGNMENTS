@@ -1,4 +1,4 @@
-# AWS Terraform Lab (Assignment 6)
+# AWS Terraform Lab 
 
 ## What This Lab Builds
 - Custom VPC (`10.1.0.0/16`) with DNS support
