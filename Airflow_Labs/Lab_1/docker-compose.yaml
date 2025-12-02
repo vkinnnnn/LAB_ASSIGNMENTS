@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  airflow:
+    image: apache/airflow:2.9.1
+    container_name: airflow_lab1
+    platform: linux/amd64
+    environment:
+      # Run Airflow as a non-root user inside the container
+      - AIRFLOW_UID=50000
+      # Do not load example DAGs
+      - AIRFLOW__CORE__LOAD_EXAMPLES=false
+      # Install extra Python packages needed by this lab
+      - _PIP_ADDITIONAL_REQUIREMENTS=pandas scikit-learn kneed
+    volumes:
+      # Mount your Lab 1 DAGs directory into the Airflow container
+      - ./dags:/opt/airflow/dags
+    ports:
+      # Airflow web UI
+      - "8091:8080"
+    command: standalone
+
+

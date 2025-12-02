@@ -1,0 +1,4 @@
+Customer Segmentation Lab 1 Result
+---------------------------------
+Predicted cluster for first test row: 4
+Elbow-based suggested k: 5
