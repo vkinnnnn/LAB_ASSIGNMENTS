@@ -1,0 +1,21 @@
+## Terraform state and cache
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+tfplan
+tfplan.*
+
+## Variable files
+*.tfvars
+*.tfvars.json
+
+## Outputs and logs
+outputs/
+
+## Credentials and secrets
+service-account.json
+*.pem
+*.key
+
+
