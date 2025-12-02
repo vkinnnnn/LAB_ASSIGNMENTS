@@ -1,0 +1,49 @@
+############################
+# OS / Editor cruft
+############################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+############################
+# Python / virtual env
+############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+env/
+
+############################
+# Notebooks
+############################
+.ipynb_checkpoints/
+
+############################
+# Terraform (all labs)
+############################
+**/.terraform/
+**/.terraform.lock.hcl
+**/terraform.tfstate*
+**/tfplan*
+**/*.tfvars*
+**/outputs/
+
+############################
+# Secrets / credentials
+############################
+**/*secret*.*
+**/*credentials*.*
+**/*password*.*
+**/service-account.json
+*.key
+*.pem
+*.pfx
+
+
