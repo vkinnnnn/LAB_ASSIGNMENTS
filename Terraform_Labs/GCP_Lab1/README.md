@@ -1,5 +1,4 @@
-# GCP Terraform Lab (Assignment 6)
-
+# GCP Terraform Lab 
 ## What This Lab Builds
 - Compute Engine VM (`e2-micro`, Debian 12, 20 GB boot disk)
 - Cloud Storage bucket with versioning + 30‑day lifecycle rule
