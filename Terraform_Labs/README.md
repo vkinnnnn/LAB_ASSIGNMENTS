@@ -1,14 +1,14 @@
-# Terraform Labs (Assignment 6)
-
+# Terraform Labs 
 ## Overview
 
 This folder contains two Terraform labs that provision minimal but realistic cloud infrastructure on **AWS** and **GCP**. Each lab is selfcontained, parameterized with variables, and saves Terraform outputs and logs to an outputs/ folder for easy review.
 
 ## Structure
 
-- AWS_Lab1/ – AWS networking + EC2 lab
-- GCP_Lab1/ – GCP Compute Engine + Cloud Storage lab
-- un-labs.ps1 – Optional helper script (local use only, do **not** commit real keys inside it)
+- AWS_Lab1/ â€“ AWS networking + EC2 lab
+- GCP_Lab1/ â€“ GCP Compute Engine + Cloud Storage lab
+- 
+un-labs.ps1 â€“ Optional helper script (local use only, do **not** commit real keys inside it)
 
 ## AWS Lab 1 (AWS_Lab1)
 
@@ -67,7 +67,8 @@ When pushing this folder to GitHub, make sure the following never get committed:
   - **/.terraform/
 - Credentials:
   - Any service-account.json or other secret key files
-  - Any script that contains real access keys (e.g. a customized un-labs.ps1)
+  - Any script that contains real access keys (e.g. a customized 
+un-labs.ps1)
 - Local .tfvars or other files with secrets
 
 Use a .gitignore similar to:
@@ -99,3 +100,4 @@ terraform destroy -auto-approve
 
 - These labs are customized versions of the original Terraform labs from the MLOps course repo ([MLOps Terraform_Labs](https://github.com/raminmohammadi/MLOps/tree/main/Labs/Terraform_Labs)).
 - The goal is to demonstrate clean, parameterized IaC for both clouds while keeping credentials out of version control.
+
